@@ -176,4 +176,6 @@ CORS_ALLOW_HEADERS = [
     'content-type',
 ]
 
+SECURE_SSL_REDIRECT = True
+
 
