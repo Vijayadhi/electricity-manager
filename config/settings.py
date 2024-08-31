@@ -26,10 +26,10 @@ SECRET_KEY = 'django-insecure-v6b+_xh$z09beg3n1#_0cwqb@23km1ce16s%!lc)%vz_=a-zeo
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'electricity-manager-api.onrender.com'
-    '13.228.225.19'
-    '18.142.128.26'
-    '54.254.162.138'
+    'electricity-manager-api.onrender.com',
+    '13.228.225.19',
+    '18.142.128.26',
+    '54.254.162.138',
     '0.0.0.0'
 ]
 
