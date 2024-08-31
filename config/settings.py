@@ -167,3 +167,13 @@ CSRF_TRUSTED_ORIGINS = [
     'https://electricity-manager-api.onrender.com',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "https://electricity-manager-api.onrender.com",
+]
+
+CORS_ALLOW_HEADERS = [
+    'authorization',
+    'content-type',
+]
+
+
