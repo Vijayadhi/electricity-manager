@@ -163,3 +163,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'backend.CustomUser'
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://electricity-manager-api.onrender.com',
+]
+
