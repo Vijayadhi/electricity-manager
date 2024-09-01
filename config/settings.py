@@ -23,9 +23,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-v6b+_xh$z09beg3n1#_0cwqb@23km1ce16s%!lc)%vz_=a-zeo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'electricity-manager-api.onrender.com',
+    '13.228.225.19',
+    '18.142.128.26',
+    '54.254.162.138',
+    '0.0.0.0'
+]
 
 
 # Application definition
@@ -156,4 +162,19 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'backend.CustomUser'
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://electricity-manager-api.onrender.com',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "https://electricity-manager-api.onrender.com",
+]
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOW_HEADERS = ['*']
+CORS_ALLOW_METHODS = ['DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT']
+
+
+SECURE_SSL_REDIRECT = False
 
