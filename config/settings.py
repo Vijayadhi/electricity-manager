@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-v6b+_xh$z09beg3n1#_0cwqb@23km1ce16s%!lc)%vz_=a-zeo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'electricity-manager-api.onrender.com',
