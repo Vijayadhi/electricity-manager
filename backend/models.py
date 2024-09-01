@@ -14,11 +14,13 @@ class CustomUser(AbstractUser):
     mobile_no = models.CharField(_('mobile number'), max_length=10, null=True)
     # date_of_birth = models.DateField(_("date of birth"), null=True, blank=True)
     creation_date = models.DateField(default=timezone.now)
+    is_staff = models.BooleanField(default=True)
+
     # profile_pic = models.ImageField(upload_to='media', null=True, blank=True)
     # otp_verified = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['mobile_no']
+    REQUIRED_FIELDS = ['mobile_no', 'username']
 
     objects = CustomUserManager()
 
