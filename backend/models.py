@@ -77,7 +77,7 @@ class MonthlyEbBill(models.Model):
         super(MonthlyEbBill, self).save(*args, **kwargs)
 
     def __str__(self):
-        return f"{self.name.username} - Amount \t{self.bill_amount}"
+        return f"{self.meter.user.username} - Amount \t{self.bill_amount}"
 
     class Meta:
         db_table = 'bill'
