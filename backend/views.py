@@ -316,6 +316,10 @@ class BillViewSet(viewsets.ModelViewSet):
     serializer_class = BillSerializer
     permission_classes = [IsAuthenticated]
 
+    def get_queeryset(self):
+        return Meter.objects.filter(meter=self.request.meter.user)
+    
+
 
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
 def create_auth_token(sender, instance=None, created=False, **kwargs):
